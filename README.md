@@ -11,7 +11,7 @@ func main() {
 		fmt.Println("Error:", err)
 	} else {
 		fmt.Println("Result:", result)
-		ipscore, err := postRequest(result)
+		ipscore, err := postRequest(result) // test the solution
 		if err != nil {
 			fmt.Println("Error:", err)
 			return
@@ -32,7 +32,7 @@ if __name__ == "__main__":
     try:
         result = bypass_v3(get_url, post_url, bg)
         print("Result:", result)
-        ipscore = post_request(result)
+        ipscore = post_request(result) # test the solution
         print(ipscore)
     except Exception as e:
         print("Error:", e)
